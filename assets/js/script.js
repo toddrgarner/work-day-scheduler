@@ -78,4 +78,67 @@ function createTimeblocks(){
       saveBlock.attr("class", "col-1 saveBtn");
       saveBlock.append('<i class="fa fa-save" ></i>'); // added icon to the div
 
+      // append all three sections to the row //
+      hourRow.append(hourBlock);
+        hourRow.append(eventBlock);
+        hourRow.append(saveBlock);
+
+        // add each row to the timeblockContainer
+        timeblockContainer.append(hourRow);
+
+        // change 11AM to 12PM
+        if(time === 11){
+            APM = "PM";
+        }
+
+        // change 12 to 1, if not then just increase by 1
+        if (time === 12){
+            time = 1;
+        } else{
+            time++;
+        }
+    }
+}
+
+// parse localStorage and update values of textboxes with previously saved events
+function updateTimeblocks(){
+    eventsArray = JSON.parse(localStorage.getItem("events"));
+    for (var i = 0; i < eventsArray.length; i++){
+        var iObjectTime = eventsArray[i].time;
+
+        for (var j = 0; j < $(".container").children().length; j++){
+            var blockTime = $(".container").children().eq(j).children().eq(0).eq(0).text();  
+            if (iObjectTime === blockTime){
+                $(".container").children().eq(j).children().eq(1).eq(0).text(eventsArray[i].event);
+            }
+        }
+    }
+}
+
+// whenever the save button has been pressed, update eventsArray and localStorage with the new change
+timeblockContainer.on("click", function(event){
+    event.stopPropagation();
+    var element = event.target;
+
+    if (element.matches("i")){
+        var currentTimeBlock = $(element).parent().parent().eq(0);
+        var childrenObject = $(currentTimeBlock).children();
+
+        var objectTime = $(childrenObject[0]).text();
+        var objectEvent = $(childrenObject[1]).val();
+
+        // update the array with the newly saved event
+        for (var i = 0; i < eventsArray.length; i++){
+            if (eventsArray[i].time == objectTime){
+                eventsArray.splice(i, 1);
+            }
+        }
+        eventsArray.push({time: objectTime, objectEvent});
+        localStorage.setItem("events", JSON.stringify(eventsArray));
+    }
+})
+
+// start the page when loaded
+init()
+
 
