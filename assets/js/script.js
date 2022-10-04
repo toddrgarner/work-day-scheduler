@@ -23,3 +23,11 @@ function init() {
     updateTimeblocks();
 }
 
+//  get evemts from localStorage. If there's no events just initialize the arrat //
+function eventStorage(){ 
+      eventsArray = JSON.parse(localStorage.getItem(events));
+      if (eventsArray === null){
+        eventsArray = [];
+        localStorage.setItem("events", JSON.stringify(eventsArray));
+    }
+}
