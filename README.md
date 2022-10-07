@@ -22,6 +22,14 @@ THEN the text for that event is saved in local storag.e <br>
 WHEN I refresh the page. <br>
 THEN the saved events persist. <br>
 
-ezgif.com-gif-maker (1).gif
+## Deployed Live URL:
+
+https://toddrgarner.github.io/work-day-scheduler/
+## Github Repository URL:
+
+https://github.com/toddrgarner/work-day-scheduler/settings/pages
+## Wor Day Scheduler GIF
+
+ezgif.com-gif-maker (2).gif
 
 © 2022 Todd Garner. Confidential and Proprietary. All Rights Reserved.
