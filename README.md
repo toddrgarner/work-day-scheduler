@@ -28,7 +28,7 @@ https://toddrgarner.github.io/work-day-scheduler/
 
 ## Github Repository URL:
 
-https://github.com/toddrgarner/work-day-scheduler/settings/pages
+https://github.com/toddrgarner/work-day-scheduler
 
 ## Wor Day Scheduler GIF
 
