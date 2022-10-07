@@ -25,12 +25,13 @@ THEN the saved events persist. <br>
 ## Deployed Live URL:
 
 https://toddrgarner.github.io/work-day-scheduler/
+
 ## Github Repository URL:
 
 https://github.com/toddrgarner/work-day-scheduler/settings/pages
 
 ## Wor Day Scheduler GIF
 
-ezgif.com-gif-maker (2).gif
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/110719370/194515573-7cb663ba-2769-43f7-bdaf-f385113e5023.gif)
 
 © 2022 Todd Garner. Confidential and Proprietary. All Rights Reserved.
