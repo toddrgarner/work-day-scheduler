@@ -1,4 +1,4 @@
-!DOCTYPEhtml>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -29,16 +29,19 @@
 
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead">   
-      </p>
+      <p class="lead">A calendar app to prepare for your work routine</p>
+      <p id="currentDay" class="lead"></p>
+      <div id="current_date"></p>
+        <script>
+        document.getElementById("current_date").innerHTML = Date();
+        </script>
     </header>
 
     <div class="container-fluid"></div>
 
-   <!-- time-block insert here -->
+   <!-- time-block starts here -->
    <!-- 9am -->
-
+   
     <section class="container-fluid">
       <div class="row my-4">
         <div
