@@ -22,6 +22,7 @@ THEN the text for that event is saved in local storag.e <br>
 WHEN I refresh the page. <br>
 THEN the saved events persist. <br>
 
-ezgif.com-gif-maker (1).gif
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/110719370/194510706-535a9f73-902d-4779-abe6-4d774291402e.gif)
 
 © 2022 Todd Garner. Confidential and Proprietary. All Rights Reserved.
