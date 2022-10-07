@@ -22,6 +22,6 @@ THEN the text for that event is saved in local storag.e <br>
 WHEN I refresh the page. <br>
 THEN the saved events persist. <br>
 
-Screen Shot 2022-10-07 at 12.16.54 AM.png
+ezgif.com-gif-maker (1).gif
 
-
+© 2022 Todd Garner. Confidential and Proprietary. All Rights Reserved.
